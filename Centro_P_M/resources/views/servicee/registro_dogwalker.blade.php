@@ -18,7 +18,6 @@
       <hr>
       <h1>Proceso de registro de los paseadores asociados al servicio</h1>
       <hr>
-      
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">  name  </label>
         <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="nombre">

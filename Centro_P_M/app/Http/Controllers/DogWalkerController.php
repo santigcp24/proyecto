@@ -17,7 +17,7 @@ class DogWalkerController extends Controller
     
     public function create()
     {
-        //se retorna la vista de crear
+        return view('servicee.registro_dogwalker');
     }
 
     

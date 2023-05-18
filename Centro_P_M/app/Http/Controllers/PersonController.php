@@ -18,7 +18,7 @@ class PersonController extends Controller
     
     public function create()
     {
-        //
+        return view('clients.registro_person');
     }
 
     

@@ -18,7 +18,7 @@ class PetController extends Controller
     
     public function create()
     {
-        //
+        return view('clients.registro_pet');
     }
 
     
