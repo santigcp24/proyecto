@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.css">
+    <link rel="stylesheet" href="./css/agendamiento.css" >
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+		<h1>Citas disponibles para el paseo</h1>
+		<input type="text" class="form-control" id="datepicker">
+	</div>
+
+
+    <br>
+    <br>
+    <br>
+    
+    <div class="container">
+        <h2>Paseadores disponibles</h2>
+          <br>
+          <br>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              paseadores 
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		    var date_input=$('input[id="datepicker"]'); // nuestro input tiene el id "datepicker"
+		    var options={
+		        format: 'mm/dd/yyyy', // el formato que queremos que tenga la fecha
+		        todayHighlight: true, // si queremos que resalte el día de hoy
+		        autoclose: true, // si queremos que se cierre el calendario al seleccionar una fecha
+		    };
+		    date_input.datepicker(options);
+		})
+	</script>
+      
+    
+                
+</body>
+</html>

@@ -1,0 +1,21 @@
+nav{
+    background-color:darkseagreen;
+    padding: 20px ;
+}   
+.columna{
+    background-color: peru;
+    color: black;
+    padding: 20px;
+    width:40% ;
+    margin: 100px;
+}
+
+.hori{
+    display: flex;
+}
+
+body{
+    background-color: bisque;
+}
+
+

@@ -1,0 +1,53 @@
+
+
+h1{
+    text-align: center;
+    size: 16px;
+}  
+h2{
+    text-align: center;
+    size: 11px;
+} 
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos para los elementos del formulario */
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .form-control {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .btn-lg {
+    align-self: flex-start;
+    margin-top: 20px;
+  }
+  .btn-lg2{
+    align-self: flex-end;
+    margin-top: 20px;
+    
+  }
+  
+  /* Estilos adicionales para hacerlo responsive */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 100%;
+      padding: 10px;
+    }
+  }
+  body {
+    background-image: url(/public/assets/bgMascotasPage.jpg);
+    
+    display :flex;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    /*BORRAR LO DE LA LETRA*/
+    color: black;
+}

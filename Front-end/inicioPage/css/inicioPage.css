@@ -1,0 +1,134 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/public/assets/bgMascotasPage.jpg);
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    /*BORRAR LO DE LA LETRA*/
+    color: white;
+}
+
+/*HEADER START*/
+header{
+    margin-bottom: 4px;
+}
+
+/*NAVIGATION START*/
+.navigation{
+    border: 2px;
+    padding: 10px;
+    height: 3rem;
+    background-color: white;
+    color: rgb(32, 148, 241);
+    display: flex;
+    justify-content: space-around;
+    box-sizing: content-box;
+}
+
+#logo, #navigationBar, #login{
+    display: flex;
+    align-items: center;    
+}
+
+#navigationInput{
+    border: 2px solid rgb(32, 148, 241);
+    border-radius: 20px;
+    width: 40rem;
+}
+
+#mascotasClubLogo{
+    width: 14rem;
+    box-sizing: content-box;
+}
+/*NAVIGATION END*/
+
+/*BANNER START*/
+.banner{
+    border: 2px;
+    padding: 10px;
+    background-color: rgb(32, 148, 241);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: content-box;
+}
+
+
+#eslogan, #imageBanner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#eslogan{
+    flex-direction: column;
+    width: 40rem;   
+}
+
+#imageBanner{
+    width: 40rem;
+    height: 20rem;
+}
+
+#eslogan h1{
+    margin-bottom: 0px;
+    font-size: 5rem;
+    padding: 0.5rem;
+}
+
+#eslogan h2{
+    margin-bottom: 10px;
+    font-size: 2    rem;
+    padding: 0.5rem;
+}
+/*BANNER END*/
+/*HEADER END*/
+
+/*SECTION START*/
+
+section{
+    display: grid;
+}
+.containerSection{
+    margin: 20PX;
+    border: 2px;
+    padding: 10px;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/*SECTION END*/
+
+/*FOOTER START*/
+footer{
+    background-color:  rgb(32, 148, 241);
+    color: white;
+    height: 3rem;
+    display: grid;
+}
+
+.containerFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/*FOOTER END*/
+
+/*SCROLLBAR BEGIN*/
+body::-webkit-scrollbar{
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: rgb(32, 148, 241);
+    border: 2px solid white;
+}
+
+/*SCROLLBARD END*/
