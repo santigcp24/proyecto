@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(/public/assets/bgMascotasPage.jpg);
+    background-image: url(/Front-end/public/assets/bgMascotasPage.jpg);
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
@@ -42,7 +42,7 @@ header{
 }
 
 #mascotasClubLogo{
-    width: 14rem;
+    width: 10rem;
     box-sizing: content-box;
 }
 /*NAVIGATION END*/
