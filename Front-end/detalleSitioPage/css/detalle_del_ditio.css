@@ -1,0 +1,58 @@
+nav{
+    background-color:white;
+    padding: 20px ;
+}   
+.columna{
+    background-color: peru;
+    color: black;
+    padding: 20px;
+    width:40% ;
+    margin: 100px;
+}
+
+.bosque_popular{
+    max-width: 80%;
+    height: auto;
+}
+.descripcion_BP{
+    display: flex;
+    
+}
+
+body{
+    background-image: url(/Front-end/public/assets/bgMascotasPage.jpg);
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    /*BORRAR LO DE LA LETRA*/
+    color: black;
+}
+
+
+.hori {
+    width: 30%;
+    height: 30%;
+    margin-right: 50px;
+}
+.tamano_letra {
+    
+    font-size: 60px;
+    align-items: center;
+}
+.h2{
+    
+    font-size: 30px;
+    text-align: center;
+}
+
+.tamano_letra_titulo{
+    
+    font-size: 30px;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .container {
+      max-width: 100%;
+      padding: 10px;
+    }
+  }
