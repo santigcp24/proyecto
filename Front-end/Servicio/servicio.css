@@ -1,0 +1,38 @@
+.container {
+    margin-top: 50px;
+}
+
+.box {
+    padding: 20px;
+    margin: 10px;
+}
+
+#box1 {
+    background-color: lightgrey;
+}
+
+#box2 {
+    background-color: lightblue;
+}
+
+#box3 {
+    background-color: lightgreen;
+}
+
+#box4 {
+    background-color: lightyellow;
+}
+body{
+    background-image: url(/Front-end/public/assets/bgMascotasPage.jpg);
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    /*BORRAR LO DE LA LETRA*/
+    color: black;
+}
+@media (max-width: 768px) {
+    .container {
+      max-width: 100%;
+      padding: 10px;
+    }
+  }

@@ -1,6 +1,3 @@
-
-@extends('layouts.registro_plantilla')
-@section('plantilla_registro')
 <!DOCTYPE html>
 
 <html lang="en">
@@ -46,6 +43,7 @@
       <br>
       <button type="submit" class="btn btn-primary btn-lg">Ingresar</button><br>
       <br>
+      
       <h4>Proceso de registro de la mascota</h4>
       <button id="Siguiente formulario">Haz click aquí</button>
             <script type="text/javascript">
@@ -55,6 +53,7 @@
             </script>
       <br>
     </div>
+    @yield('plantilla_registro')
+
 </body>
 </html>
-@endsection

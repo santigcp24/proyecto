@@ -13,7 +13,17 @@
 
     <div class="container">
       <hr>
-      <button type="button" class="btn btn-primary btn-lg">Inicio</button>
+      <div class="containerFooter">
+        <button id="Iniciopage" class="btn btn-primary btn-lg">Inicio</button>
+        <script type="text/javascript">
+            document.getElementById("Iniciopage").onclick = function () {
+             location.href = "http://127.0.0.1:5500/Front-end/inicioPage/inicioPage.html";
+             };
+        </script>
+    
+    </div>
+      
+      
       <hr>
       <h1>Proceso de registro de la mascota</h1>
       <hr>
@@ -39,6 +49,15 @@
       <br>
       <button type="submit" class="btn btn-primary btn-lg">Ingresar</button><br>
       <br>
+
+      <button id="agendamientopage" class="btn btn-primary btn-lg">Agendate</button><br>
+  
+            <script type="text/javascript">
+                document.getElementById("agendamientopage").onclick = function () {
+                 location.href = "http://127.0.0.1:5500/Front-end/agendamientoPaseoPage/agendamiento.html";
+                 };
+            </script>
+
       
     </div>
 </body>

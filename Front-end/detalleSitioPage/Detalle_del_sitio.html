@@ -15,7 +15,7 @@
 
      <h2>Detalles de sitio donde se pasearan las mascotas</h2>
     
-        <div class="bosque_popular ">
+        <div class="bosque_popular " id="BP">
         <img src="/Front-end/detalleSitioPage/assets/BosquePopular.jpg" class="img_bosqueP" alt="Bosque popular el prado">
         <nav>
             <section class="descripcion_BP">
@@ -46,11 +46,23 @@
         <img src="/Front-end/detalleSitioPage/assets/Parque_alcazares.jpg" class="img" alt="parque de los alcazares">
         <nav>
             <section>
-                <p class="columnas"> </p>
+                <p class="columnas"> La reserva natural de los Alcazares en sitio en especial donde podrán pasear a tu mascota
+                    sintiendose a gusto con la armonia y paz que emana mencionado lugar. Es un sitio bastante amplío en donde las 
+                    mascotas podrán interactuar entre si y explorar nuevos territorios.
+                </p>
             </section>    
         </nav>
 
     </div>
+
     
 </body>
+
+<div class="containerFooter">
+    <button id="Iniciopage">Regresar</button>
+    <script type="text/javascript">
+        document.getElementById("Iniciopage").onclick = function () {
+         location.href = "http://127.0.0.1:5500/Front-end/inicioPage/inicioPage.html";
+         };
+    </script>
 </html>

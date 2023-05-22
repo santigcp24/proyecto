@@ -19,8 +19,9 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('registro_person');
 });
+
  
 Auth::routes();
 

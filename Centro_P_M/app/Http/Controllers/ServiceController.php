@@ -24,10 +24,7 @@ class ServiceController extends Controller
     public function store(Request $request)
     {
         $Service = new Service;
-        $Service->IdLocation_PK = $request->IdLocation_PK;
-        $Service->NameLocation = $request->NameLocation;
-        $Service->DirLocation = $request->DirLocation;
-        $Service->Date_walk = $request->Date_walk;
+        $Service->date = $request->date;
         $Service -> save();
         return $Service;
 
@@ -47,21 +44,18 @@ class ServiceController extends Controller
     }
 
     
-    public function update(Request $request, Service $IdLocation_PK)
+    public function update(Request $request, Service $id)
     {
-        $Service = Service::find($IdLocation_PK);
-        $Service->IdLocation_PK = $request->IdLocation_PK;
-        $Service->NameLocation = $request->NameLocation;
-        $Service->DirLocation = $request->DirLocation;
-        $Service->Date_walk = $request->Date_walk;
+        $Service = Service::find($id);
+        $Service->date= $request->date;
         $Service -> save();
         return $Service;
     }
 
     
-    public function destroy(Service $IdLocation_PK)
+    public function destroy(Service $id)
     {
-        $Service = Service::find($IdLocation_PK);
+        $Service = Service::find($id);
         $Service->delete();
         return $Service;
        

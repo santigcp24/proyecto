@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('dogWalkers', function (Blueprint $table) {
             $table->id();
+            $table->string("Identity");
             $table->string("name");
             $table->string("phone");
             $table->unsignedBigInteger("id_person");

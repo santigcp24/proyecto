@@ -27,7 +27,12 @@
             <div id="eslogan">
                 <h1>Mascotas Club</h1>
                 <h2><em>La mejor guardería para tu mascota</em></h1>
-                <button type="button" class="btn btn-primary">Agendate</button>
+                <button id="Iniciosesion" class="btn btn-primary">Agendate</button>
+                <script type="text/javascript">
+                    document.getElementById("Iniciosesion").onclick = function () {
+                     location.href = "http://127.0.0.1:5500/Front-end/JoinUser/Join.html";
+                     };
+                </script>
             </div>
             <div id="imageBanner">
                 <img src="./assets/bannerCat.png" alt="bannerMascotaClub" style="width: 300px;">
@@ -51,7 +56,13 @@
                 <div class="card-body">
                     <h5 class="card-title">Lugares paseo</h5>
                     <p class="card-text">Encuentra la información relevante a cerca de las areas de paseo</p>
-                    <button type="button" class="btn btn-primary">Detalle del lugar</button>
+                    <button id="Sitios de paseo"  class="btn btn-primary">Detalle del lugar</button>
+                     <script type="text/javascript">
+                          document.getElementById("Sitios de paseo").onclick = function () {
+                             location.href = "http://127.0.0.1:5500/Front-end/detalleSitioPage/Detalle_del_sitio.html";
+                               };
+                            </script>
+
                 </div>
             </div>
             <!--Carta para contacto empresa-->

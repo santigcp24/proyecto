@@ -13,7 +13,13 @@
 
     <div class="container">
       <hr>
-      <button type="button" class="btn btn-primary btn-lg">Inicio</button>
+      <button id="Iniciopage" class="btn btn-primary btn-lg">Inicio</button>
+      <button id="Iniciopage">Regresar</button>
+            <script type="text/javascript">
+                document.getElementById("Iniciopage").onclick = function () {
+                 location.href = "http://127.0.0.1:5500/Front-end/inicioPage/inicioPage.html";
+                 };
+            </script>
       <hr>
       <h1>Proceso de registro del usuario</h1>
       <hr>
@@ -44,7 +50,13 @@
       <button type="submit" class="btn btn-primary btn-lg">Ingresar</button><br>
       <br>
       <h4>Proceso de registro de la mascota</h4>
-      <button type="submit" class="btn btn-primary btn-lg2">Siguiente formulario</button><br>
+      <button id="Siguiente formulario">RP</button>
+            <script type="text/javascript">
+                document.getElementById("Siguiente formulario").onclick = function () {
+                 location.href = "http://127.0.0.1:5500/Front-end/registroPagina/interfazregistroPet.html";
+                 };
+            </script>
+      <br>
     </div>
 </body>
 </html>

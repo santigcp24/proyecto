@@ -6,12 +6,7 @@
     <title>Iniciar Sesión</title>
 
     <!-- Enlace a Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-    <!-- Estilos adicionales si es necesario -->
-    <style>
-        
-    </style>
+    <link rel="stylesheet" href="/Front-end/JoinUser/css/join.css">
 </head>
 <body>
     <div class="container">
@@ -19,10 +14,7 @@
             <form>
                 <br>
                 <br>
-                <br>
-                <br>
-                <br>
-                <br>
+            
                 
                 <h2 class="text-center">Iniciar Sesión</h2>
                 <div class="form-group">
@@ -32,10 +24,28 @@
                     <input type="password" class="form-control" placeholder="Contraseña" required="required">
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+                    <button id="RegistroCl" class="btn btn-primary btn-block">Ingresar</button>
+                     <script type="text/javascript">
+                          document.getElementById("RegistroCl").onclick = function () {
+                             location.href = "http://127.0.0.1:5500/Front-end/registroPagina/interfazregistro.html";
+                               };
+                            </script>
                 </div>
             </form>
         </div>
     </div>
+    <footer>
+        <div class="containerFooter">
+            <button id="Iniciopage">Regresar</button>
+            <script type="text/javascript">
+                document.getElementById("Iniciopage").onclick = function () {
+                 location.href = "http://127.0.0.1:5500/Front-end/inicioPage/inicioPage.html";
+                 };
+            </script>
+        
+        </div>
+         
+
+    </footer>
 </body>
 </html>
