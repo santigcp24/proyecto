@@ -4,48 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Iniciar Sesión</title>
-
     <!-- Enlace a Bootstrap CSS -->
     <link rel="stylesheet" href="/Front-end/JoinUser/css/join.css">
 </head>
 <body>
-    <div class="container">
-        <div class="login-form">
-            <form>
-                <br>
-                <br>
-            
-                
-                <h2 class="text-center">Iniciar Sesión</h2>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Usuario" required="required">
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Contraseña" required="required">
-                </div>
-                <div class="form-group">
-                    <button id="RegistroCl" class="btn btn-primary btn-block">Ingresar</button>
-                     <script type="text/javascript">
-                          document.getElementById("RegistroCl").onclick = function () {
-                             location.href = "http://127.0.0.1:5500/Front-end/registroPagina/interfazregistro.html";
-                               };
-                            </script>
-                </div>
-            </form>
+  <nav class=" fixed-top">
+    <div class="container-fluid">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a id="incioretorno" class="nav-link" href="#">inicio</a>
+          <script type="text/javascript">
+            document.getElementById("incioretorno").onclick = function () {
+             location.href = "http://127.0.0.1:5500/Front-end/inicioPage/inicioPage.html";
+             };
+        </script>
         </div>
+      </div>
     </div>
-    <footer>
-        <div class="containerFooter">
-            <button id="Iniciopage">Regresar</button>
-            <script type="text/javascript">
-                document.getElementById("Iniciopage").onclick = function () {
-                 location.href = "http://127.0.0.1:5500/Front-end/inicioPage/inicioPage.html";
-                 };
-            </script>
-        
+  </nav>
+    <form>
+        <div class="row mb-3">
+          <label for="inputUsua" class="col-sm-2 col-form-label">Usuario</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputUsu">
+          </div>
         </div>
-         
-
+        <div class="row mb-3">
+          <label for="inputCtr" class="col-sm-2 col-form-label">Contrasena</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputCt">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-sm-10 offset-sm-2">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+                Mantener sesion iniciada
+              </label>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </form>
+      
+      <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var Usuario = document.getElementById('inputUsu').value;
+            var Contrasena = document.getElementById('inputCt').value;
+            if (!Usuario) {
+                alert('El campo nombre está vacío');
+                return;
+            }
+            if (!Contrasena) {
+                alert('El campo apellido está vacío');
+                return;
+            }
+        });
+    </script>
+    <footer>
     </footer>
 </body>
 </html>

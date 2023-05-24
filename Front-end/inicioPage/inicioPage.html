@@ -20,7 +20,20 @@
                 <input type="text" class="form-control" id="navigationInput" placeholder="Search">
             </div>
             <div id="login">
-                <button type="button" class="btn btn-outline-primary" >Login</button>
+                <button id = 'sesion'type="button" class="btn btn-outline-primary" >Login</button>
+                <script type="text/javascript">
+                    document.getElementById("sesion").onclick = function () {
+                     location.href = "http://127.0.0.1:5500/Front-end/JoinUser/Join.html";
+                     };
+                </script>
+            </div>
+            <div id="RegistrarPV">
+                <button id = 'sesion'type="button" class="btn btn-outline-primary" >Crear Usuario</button>
+                <script type="text/javascript">
+                    document.getElementById("RegistrarPV").onclick = function () {
+                     location.href = "http://127.0.0.1:5500/Front-end/JoinUser/CreacionUsu.html";
+                     };
+                </script>
             </div>
         </div>
         <div class="banner">
@@ -79,7 +92,14 @@
     <footer>
         <div class="containerFooter">
             <div class="contact"> 
-                <h3>Contactanos</h3>
+                <a id="dogW"> ¿Quieres trabajar con nosotros?</a>
+                <script>
+                    document.getElementById("dogW").onclick = function () {
+                       location.href = "http://127.0.0.1:5500/Front-end/registroPagina/interfazregistroDogwalker.html";
+                         };
+                      </script>
+
+
             </div>
             <div class="navigationFooter"> 
                 <h3>Links</h3>
@@ -89,4 +109,5 @@
             </div>
         </div>
     </footer>
+</body>
 </html>

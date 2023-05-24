@@ -10,30 +10,58 @@
     <title>Document</title>
 </head>
 <body>
-
     <div class="container">
-     
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a id="incioretorno" class="nav-link" href="#">inicio</a>
+              <script type="text/javascript">
+                document.getElementById("incioretorno").onclick = function () {
+                 location.href = "http://127.0.0.1:5500/Front-end/inicioPage/inicioPage.html";
+                 };
+            </script>
+            </div>
+          </div>
+        </div>
+      </nav>
       <hr>
-      <button type="button" class="btn btn-primary btn-lg2">Regresar</button>
+      <h2>Proceso de registro de los paseadores asociados al servicio</h2>
       <hr>
-      <h1>Proceso de registro de los paseadores asociados al servicio</h1>
-      <hr>
+      <div class="container"> 
+        <div class="row"> 
+          <div class="col-12 col-md-8 mx-auto my-5">
+    
+              <form>
       
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">  name  </label>
-        <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="nombre">
+              <h4>Ingresa tus datos para trabajar con nosotros</h4>
+              <div class="col-12">
+                <label for="inputIdentificacion" class="form-label">Identificacion</label>
+                <input type="text" class="form-control" id="inputId" placeholder="identificacion">
+              </div>
+               <div class="col-md-6">
+               <label for="inputNombre" class="form-label">Nombre</label>
+               <input type="email" class="form-control" id="inputNom" placeholder="nombre">
+               </div>
+                      <div class="col-12">
+                         <label for="inputCorreo" class="form-label">Correo electronico</label>
+                         <input type="text" class="form-control" id="inputCo" placeholder="correo electronico">
+                      </div>
+                        <div class="col-md-6">
+                        <label for="inputTel" class="form-label">Telefono</label>
+                        <input type="text" class="form-control" id="inputTe" placeholder="telefono">
+                        </div>
+                           <div class="col-12">
+                           <button type="submit" class="btn btn-primary">Registrar</button>
+                           </div>
+             </form>
+          </div>
+        </div> 
       </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"><Em> phone </Em></label>
-        <input type="documento" class="form-control" id="exampleFormControlInput1" placeholder="telefono">
-      </div>
-      
-      
-      <hr>
-     
-      <br>
-      <button type="submit" class="btn btn-primary btn-lg">Ingresar</button><br>
-      <br>
       
     </div>
 </body>

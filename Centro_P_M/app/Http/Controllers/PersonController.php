@@ -12,7 +12,11 @@ class PersonController extends Controller
     public function index()
     {
         $persons = Person::All();
-        return $persons;
+        $dato['data_person'] = $persons; 
+
+        return view('clients.index',$dato);
+        
+
     }
 
     
@@ -33,10 +37,6 @@ class PersonController extends Controller
         $Person->phone = $request->phone;
         $Person->save();
         return $Person;
-
-
-        
-
     }
 
     
