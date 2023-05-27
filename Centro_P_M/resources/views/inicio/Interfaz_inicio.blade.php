@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <header>
+<link rel="stylesheet" href="{{ asset('views/inicio/css/inicio.css') }}">
         <div class="navigation">
             <div id="logo">
                 <img id="mascotasClubLogo" src="/Front-end/public/assets/mascotaClubIcon.png" alt="logoMascotasCLub">
@@ -24,7 +25,7 @@
                 </script>
             </div>
             <div id="imageBanner">
-                <img src="./assets/bannerCat.png" alt="bannerMascotaClub" style="width: 300px;">
+                <img src="{{asset('public/images/')}}" alt="bannerMascotaClub" style="width: 300px;">
             </div>
         </div>
     </header>

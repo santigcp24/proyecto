@@ -27,11 +27,11 @@ class PersonController extends Controller
 
     
     public function store(Request $request)
-    {
+    {   
         $Person = new Person;
         $Person->id = $request->id;
         $Person->name = $request->name;
-        $Person->lastname = $request->lastname;
+        $Person->last_name = $request->last_name;
         $Person->Identy = $request->Identy;
         $Person->email = $request->email;
         $Person->phone = $request->phone;
@@ -40,13 +40,13 @@ class PersonController extends Controller
     }
 
     
-    public function show(Person $client)
+    public function show(Person $person)
     {
         //
     }
 
     
-    public function edit(Person $client)
+    public function edit(Person $person)
     {
         
     }

@@ -1,13 +1,15 @@
 <?php
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\View\inicio;
+use App\Http\Controllers\PersonController;
 
 
 
-Route::get('/usuarios', [App\Http\Controllers\PersonController::class, 'index']);
+Route::get('/person', [App\Http\Controllers\PersonController::class, 'index']);
 
 Route::get('/', function(){
-    return view('Interfaz_inicio');
+    return view('inicio.Interfaz_inicio');
 }); 
 
 
