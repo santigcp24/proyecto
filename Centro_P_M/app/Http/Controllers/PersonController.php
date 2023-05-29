@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Barryvdh\DomPDF\PDF;
 use App\Models\Person;
 use Illuminate\Http\Request;
 
@@ -12,9 +12,9 @@ class PersonController extends Controller
     public function index()
     {
         $persons = Person::All();
-        $dato['data_person'] = $persons; 
+        $data_person['data_person'] = $persons; 
 
-        return view('clients.index',$dato);
+        return view('clients.index',$data_person);
         
 
     }
@@ -22,7 +22,7 @@ class PersonController extends Controller
     
     public function create()
     {
-        return view('clients.registro_person');
+        
     }
 
     
@@ -74,7 +74,11 @@ class PersonController extends Controller
 
     }
     
-
+    public function generar_pdf(){
+        $person = Person::all();
+        $pdf = PDF::loadView('clients.generar_pdf', compact('person'));
+        return $pdf->download('person.pdf');
+    }
     
 }
 

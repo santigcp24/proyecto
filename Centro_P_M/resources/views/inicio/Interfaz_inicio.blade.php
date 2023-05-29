@@ -1,10 +1,10 @@
-@extends('layouts.app')
-@section('content')
+@extends('layouts.plantilla')
+@section('contenido')
 <header>
 <link rel="stylesheet" href="{{ asset('views/inicio/css/inicio.css') }}">
         <div class="navigation">
             <div id="logo">
-                <img id="mascotasClubLogo" src="/Front-end/public/assets/mascotaClubIcon.png" alt="logoMascotasCLub">
+                <img id="mascotasClubLogo" src="{{asset('Centro_P_M/public/imagenes/mascotaClubIcon.png')}}" alt="logoMascotasCLub">
             </div>
             <div id="navigationBar">
                 <input type="text" class="form-control" id="navigationInput" placeholder="Search">
@@ -25,7 +25,7 @@
                 </script>
             </div>
             <div id="imageBanner">
-                <img src="{{asset('public/images/')}}" alt="bannerMascotaClub" style="width: 300px;">
+            <img id="mascotasClubLogo" src="{{asset('Centro_P_M/public/imagenes/mascotaClubLogo.png')}}" alt="logoMascotasCLub">
             </div>
         </div>
     </header>

@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use App\Models\pet;
 use Illuminate\Http\Request;
 
@@ -11,7 +9,9 @@ class PetController extends Controller
     public function index()
     {
         $pets = pet::all();
-        return $pets;
+        $dato['data_pets'] = $pets; 
+
+        return view('clients.index_pets')->with('data_pets', $dato['data_pets']);
 
     }
 

@@ -6,11 +6,22 @@ use App\Http\Controllers\PersonController;
 
 
 
-Route::get('/person', [App\Http\Controllers\PersonController::class, 'index']);
+Route::resource('/person', 'App\Http\Controllers\PersonController');
+Route::get('download-pdf','App\Http\Controllers\PersonController@generar-pdf')-> name('descargar pdf');
 
 Route::get('/', function(){
     return view('inicio.Interfaz_inicio');
 }); 
+Route::get('/tabla', function(){
+    return view('clients.index');
+}); 
+Route::get('/registro', function(){
+    return view('clients.registro_person');
+}); 
+Route::get('/registropets', function(){
+    return view('clients.index_pets');
+}); 
+
 
 
 Auth::routes();
